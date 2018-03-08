@@ -3,6 +3,14 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { CommonModule } from '@angular/common';
+import { SharedModule } from 'primeng/primeng';
+
+import { DataTableModule } from 'primeng/primeng';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
@@ -19,7 +27,7 @@ import { MyinputComponent } from './myinput/myinput.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,CommonModule, SharedModule, DataTableModule, BrowserAnimationsModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
