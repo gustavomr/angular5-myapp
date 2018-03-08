@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {PostService} from './service/post.service';
 import { Post } from './post';
+import { DataTableModule } from 'primeng/primeng';
+
 
 
 @Component({
